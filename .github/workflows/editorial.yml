@@ -1,0 +1,23 @@
+name: Generate editorial drafts
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * 1'
+permissions:
+  contents: read
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate outlines
+        run: python scripts/generate_drafts.py
+      - name: Upload drafts for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: workflowpilot-editorial-drafts
+          path: drafts/
+          retention-days: 14
