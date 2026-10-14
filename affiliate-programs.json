@@ -1,0 +1,33 @@
+{
+  "notice": "Program URLs are application links, not affiliate tracking links. Verify eligibility and terms before applying.",
+  "programs": [
+    {
+      "name": "HubSpot",
+      "category": "CRM",
+      "application_url": "https://www.hubspot.com/partners/affiliates",
+      "status": "not_applied",
+      "tracking_url": null
+    },
+    {
+      "name": "Semrush",
+      "category": "SEO",
+      "application_url": "https://www.semrush.com/lp/affiliate-program/en/",
+      "status": "not_applied",
+      "tracking_url": null
+    },
+    {
+      "name": "Kit",
+      "category": "Email marketing",
+      "application_url": "https://kit.com/affiliate",
+      "status": "not_applied",
+      "tracking_url": null
+    },
+    {
+      "name": "InVideo",
+      "category": "AI video",
+      "application_url": "https://invideo.io/make/affiliate-program/",
+      "status": "not_applied",
+      "tracking_url": null
+    }
+  ]
+}
